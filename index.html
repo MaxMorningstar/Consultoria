@@ -15,6 +15,7 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       overflow-x: hidden;
+      background-color: #f8f9fa;
     }
     header {
       background: url('img/innova_logo.jpeg') no-repeat center center;
@@ -36,6 +37,8 @@
     }
     .section-title {
       margin-bottom: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
     }
     .valor-item i {
       font-size: 2rem;
@@ -45,6 +48,52 @@
     .card-img-top {
       height: 150px;
       object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    /* Efecto hover en tarjetas */
+    .card:hover .card-img-top {
+      transform: scale(1.05);
+    }
+    /* Animaciones para botones */
+    .btn-primary {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #0b5ed7;
+      transform: scale(1.05);
+    }
+    /* Estilos para testimonios */
+    .testimonial {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .testimonial img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    /* Estilos para el formulario de reseñas */
+    #reseñaForm .form-control {
+      border-radius: 0;
+      box-shadow: none;
+      border-color: #ced4da;
+    }
+    #reseñaForm .form-control:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.25);
+    }
+    /* Suavizado en la aparición de nuevas reseñas */
+    .new-review {
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
   </style>
 </head>
@@ -63,6 +112,16 @@
           <li class="nav-item"><a class="nav-link" href="#vision">Visión</a></li>
           <li class="nav-item"><a class="nav-link" href="#valores">Valores</a></li>
           <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="clientesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Clientes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="clientesDropdown">
+              <li><a class="dropdown-item" href="#exitos">Casos de Éxito</a></li>
+              <li><a class="dropdown-item" href="#opiniones">Opiniones</a></li>
+              <li><a class="dropdown-item" href="#reseña">Deja tu reseña</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
@@ -83,7 +142,7 @@
     <div class="container" data-aos="fade-right">
       <h2 class="section-title text-center">Nuestra Misión</h2>
       <p class="lead text-center">
-        Proveer soluciones tecnológicas innovadoras y personalizadas que optimicen los procesos de nuestros clientes a través del desarrollo de aplicaciones web y móviles, inteligencia artificial, diseño de sistemas, y una infraestructura tecnológica robusta. Nos comprometemos a brindar un servicio confiable, ágil y de alta calidad para impulsar la transformación digital de las empresas.
+        Proveer soluciones tecnológicas innovadoras y personalizadas que optimicen los procesos de nuestros clientes a través del desarrollo de aplicaciones web y móviles, inteligencia artificial, diseño de sistemas y una infraestructura tecnológica robusta. Nos comprometemos a brindar un servicio confiable, ágil y de alta calidad para impulsar la transformación digital de las empresas.
       </p>
     </div>
   </section>
@@ -93,7 +152,7 @@
     <div class="container" data-aos="fade-left">
       <h2 class="section-title text-center">Nuestra Visión</h2>
       <p class="lead text-center">
-        Ser reconocidos como líderes en la creación de soluciones tecnológicas integrales que faciliten el crecimiento y la competitividad de las empresas, utilizando tecnología de vanguardia para enfrentar los desafíos del futuro. Aspiramos a ser el aliado estratégico en la evolución digital y la optimización de procesos en el ámbito empresarial.
+        Ser reconocidos como líderes en la creación de soluciones tecnológicas integrales que faciliten el crecimiento y la competitividad de las empresas, utilizando tecnología de vanguardia para enfrentar los desafíos del futuro. Aspiramos a ser el aliado estratégico en la evolución digital y la optimización de procesos empresariales.
       </p>
     </div>
   </section>
@@ -206,6 +265,106 @@
     </div>
   </section>
 
+  <!-- Sección Clientes: Casos de Éxito -->
+  <section id="exitos" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Casos de Éxito</h2>
+      <div class="row">
+        <!-- Caso 1: Proyecto Web Corporativo -->
+        <div class="col-md-4 mb-4" data-aos="flip-up">
+          <div class="card testimonial h-100 text-center p-3">
+            <img src="img/proyecto_web.jpeg" alt="Proyecto Web">
+            <h5 class="mt-3">Proyecto Web Corporativo</h5>
+            <p class="fst-italic">"Desarrollamos un portal corporativo interactivo que aumentó la visibilidad y la conversión en un 40%."</p>
+          </div>
+        </div>
+        <!-- Caso 2: App Móvil de Gestión -->
+        <div class="col-md-4 mb-4" data-aos="flip-up" data-aos-delay="100">
+          <div class="card testimonial h-100 text-center p-3">
+            <img src="img/app_movil.jpeg" alt="App Móvil">
+            <h5 class="mt-3">App Móvil de Gestión</h5>
+            <p class="fst-italic">"Implementamos una aplicación móvil intuitiva para la gestión empresarial, reduciendo tiempos operativos."</p>
+          </div>
+        </div>
+        <!-- Caso 3: Solución de IA para Automatización -->
+        <div class="col-md-4 mb-4" data-aos="flip-up" data-aos-delay="200">
+          <div class="card testimonial h-100 text-center p-3">
+            <img src="img/ia_automatizacion.jpeg" alt="Solución de IA">
+            <h5 class="mt-3">Automatización con IA</h5>
+            <p class="fst-italic">"Implementamos modelos de IA que optimizaron procesos internos y redujeron costos operativos."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Clientes: Opiniones de Clientes -->
+  <section id="opiniones" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Opiniones de Clientes</h2>
+      <!-- Contenedor de reseñas previas y nuevas -->
+      <div id="opinionesContainer" class="row">
+        <!-- Opinión Ejemplo 1 -->
+        <div class="col-md-6 mb-4" data-aos="fade-right">
+          <div class="testimonial">
+            <div class="d-flex align-items-center">
+              <img src="img/opinion1.jpeg" alt="Opinión 1">
+              <div class="ms-3">
+                <h6>Juan Pérez</h6>
+                <small>CEO - Empresa X</small>
+              </div>
+            </div>
+            <p class="mt-3">"El equipo de InnovaTech superó nuestras expectativas en cada etapa del proyecto."</p>
+          </div>
+        </div>
+        <!-- Opinión Ejemplo 2 -->
+        <div class="col-md-6 mb-4" data-aos="fade-left">
+          <div class="testimonial">
+            <div class="d-flex align-items-center">
+              <img src="img/opinion2.jpeg" alt="Opinión 2">
+              <div class="ms-3">
+                <h6>María López</h6>
+                <small>Directora de Innovación - Empresa Y</small>
+              </div>
+            </div>
+            <p class="mt-3">"Su soporte continuo ha sido clave para nuestro crecimiento digital."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Deja tu reseña (antes Registro) -->
+  <section id="reseña" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title text-center">Deja tu reseña</h2>
+      <p class="lead text-center mb-4">Comparte tu experiencia y ayuda a otros a conocer nuestros servicios</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="reseñaForm">
+            <div class="mb-3">
+              <label for="nombreReseña" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="nombreReseña" placeholder="Tu nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="emailReseña" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="emailReseña" placeholder="correo@ejemplo.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="reseña" class="form-label">Reseña</label>
+              <input type="text" class="form-control" id="reseñaInput" placeholder="Breve resumen (ej. Excelente servicio)" required>
+            </div>
+            <div class="mb-3">
+              <label for="comentarioReseña" class="form-label">Comentario</label>
+              <textarea class="form-control" id="comentarioReseña" rows="3" placeholder="Cuéntanos más de tu experiencia" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar Reseña</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Sección de Contacto -->
   <section id="contacto" class="py-5">
     <div class="container" data-aos="fade-up">
@@ -214,20 +373,20 @@
         <div class="col-md-8">
           <form id="contactForm">
             <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre" required>
+              <label for="nombreContacto" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombreContacto" placeholder="Tu nombre" required>
             </div>
             <div class="mb-3">
-              <label for="correo" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="correo" required>
+              <label for="correoContacto" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correoContacto" placeholder="correo@ejemplo.com" required>
             </div>
             <div class="mb-3">
-              <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+              <label for="mensajeContacto" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensajeContacto" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
           </form>
-          <div id="respuesta" class="alert alert-success mt-3 d-none">¡Gracias por contactarnos! Pronto nos comunicaremos contigo.</div>
+          <div id="respuestaContacto" class="alert alert-success mt-3 d-none">¡Gracias por contactarnos! Pronto nos comunicaremos contigo.</div>
         </div>
       </div>
     </div>
@@ -256,10 +415,44 @@
       once: true
     });
     
-    // Interacción en el formulario de contacto
+    // Formulario de contacto
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      document.getElementById('respuesta').classList.remove('d-none');
+      document.getElementById('respuestaContacto').classList.remove('d-none');
+      this.reset();
+    });
+    
+    // Formulario de "Deja tu reseña"
+    document.getElementById('reseñaForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Recoger los valores del formulario
+      const nombre = document.getElementById('nombreReseña').value;
+      const email = document.getElementById('emailReseña').value;
+      const resumen = document.getElementById('reseñaInput').value;
+      const comentario = document.getElementById('comentarioReseña').value;
+      
+      // Crear la nueva reseña (tarjeta testimonial)
+      const reviewCol = document.createElement('div');
+      reviewCol.className = 'col-md-6 mb-4 new-review';
+      
+      reviewCol.innerHTML = `
+        <div class="testimonial">
+          <div class="d-flex align-items-center">
+            <img src="https://via.placeholder.com/80?text=${nombre.charAt(0)}" alt="Reseña">
+            <div class="ms-3">
+              <h6>${nombre}</h6>
+              <small>${email}</small>
+            </div>
+          </div>
+          <p class="mt-3"><strong>${resumen}:</strong> ${comentario}</p>
+        </div>
+      `;
+      
+      // Agregar la nueva reseña al contenedor de opiniones
+      document.getElementById('opinionesContainer').appendChild(reviewCol);
+      
+      // Reiniciar el formulario
       this.reset();
     });
   </script>
