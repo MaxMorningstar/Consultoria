@@ -78,7 +78,7 @@ if (!isset($users[0]['role']) || $users[0]['role'] !== 'admin') {
   exit;
 }
 
-// 3) Guardar sesión
+
 $_SESSION['user'] = [
   'email' => $email,
   'role'  => 'admin',
