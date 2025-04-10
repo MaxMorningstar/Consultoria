@@ -98,7 +98,6 @@
   </style>
 </head>
 <body>
-
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-aos="fade-down">
     <div class="container">
@@ -107,13 +106,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav align-items-center">
           <li class="nav-item"><a class="nav-link" href="#mision">Misión</a></li>
           <li class="nav-item"><a class="nav-link" href="#vision">Visión</a></li>
           <li class="nav-item"><a class="nav-link" href="#valores">Valores</a></li>
           <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="clientesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="clientesDropdown" role="button" data-bs-toggle="dropdown">
               Clientes
             </a>
             <ul class="dropdown-menu" aria-labelledby="clientesDropdown">
@@ -123,10 +122,17 @@
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <!-- Icono de Administrador -->
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html" title="Panel de Administración">
+              <i class="fas fa-user-shield"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
+  
 
   <!-- Header / Hero -->
   <header class="d-flex align-items-center">
@@ -137,356 +143,316 @@
     </div>
   </header>
 
-  <!-- Sección Misión -->
-  <section id="mision" class="py-5">
-    <div class="container" data-aos="fade-right">
-      <h2 class="section-title text-center">Nuestra Misión</h2>
-      <p class="lead text-center">
-        Proveer soluciones tecnológicas innovadoras y personalizadas que optimicen los procesos de nuestros clientes a través del desarrollo de aplicaciones web y móviles, inteligencia artificial, diseño de sistemas y una infraestructura tecnológica robusta. Nos comprometemos a brindar un servicio confiable, ágil y de alta calidad para impulsar la transformación digital de las empresas.
-      </p>
-    </div>
-  </section>
+<!-- Sección Misión -->
+<section id="mision" class="py-5">
+  <div class="container" data-aos="fade-right">
+    <h2 class="section-title text-center">Nuestra Misión</h2>
+    <p class="lead text-center">
+      Proveer soluciones tecnológicas innovadoras y personalizadas que optimicen los procesos de nuestros clientes a través del desarrollo de aplicaciones web y móviles, inteligencia artificial, diseño de sistemas y una infraestructura tecnológica robusta. Nos comprometemos a brindar un servicio confiable, ágil y de alta calidad para impulsar la transformación digital de las empresas.
+    </p>
+  </div>
+</section>
 
-  <!-- Sección Visión -->
-  <section id="vision" class="py-5 bg-light">
-    <div class="container" data-aos="fade-left">
-      <h2 class="section-title text-center">Nuestra Visión</h2>
-      <p class="lead text-center">
-        Ser reconocidos como líderes en la creación de soluciones tecnológicas integrales que faciliten el crecimiento y la competitividad de las empresas, utilizando tecnología de vanguardia para enfrentar los desafíos del futuro. Aspiramos a ser el aliado estratégico en la evolución digital y la optimización de procesos empresariales.
-      </p>
-    </div>
-  </section>
+<!-- Sección Visión -->
+<section id="vision" class="py-5 bg-light">
+  <div class="container" data-aos="fade-left">
+    <h2 class="section-title text-center">Nuestra Visión</h2>
+    <p class="lead text-center">
+      Ser reconocidos como líderes en la creación de soluciones tecnológicas integrales que faciliten el crecimiento y la competitividad de las empresas, utilizando tecnología de vanguardia para enfrentar los desafíos del futuro. Aspiramos a ser el aliado estratégico en la evolución digital y la optimización de procesos empresariales.
+    </p>
+  </div>
+</section>
 
-  <!-- Sección Valores -->
-  <section id="valores" class="py-5">
-    <div class="container">
-      <h2 class="section-title text-center" data-aos="fade-up">Nuestros Valores</h2>
-      <div class="row text-center">
-        <div class="col-md-4 valor-item mb-4" data-aos="flip-left">
-          <i class="fas fa-lightbulb"></i>
-          <h5 class="mt-3">Innovación</h5>
-          <p>Buscamos soluciones creativas y vanguardistas para cada desafío.</p>
-        </div>
-        <div class="col-md-4 valor-item mb-4" data-aos="flip-left" data-aos-delay="100">
-          <i class="fas fa-handshake"></i>
-          <h5 class="mt-3">Compromiso</h5>
-          <p>Cumplimos con los plazos y superamos expectativas en cada proyecto.</p>
-        </div>
-        <div class="col-md-4 valor-item mb-4" data-aos="flip-left" data-aos-delay="200">
-          <i class="fas fa-check-circle"></i>
-          <h5 class="mt-3">Confianza</h5>
-          <p>Construimos relaciones basadas en transparencia, honestidad y respeto.</p>
-        </div>
-        <div class="col-md-4 valor-item mb-4" data-aos="flip-right">
-          <i class="fas fa-award"></i>
-          <h5 class="mt-3">Calidad</h5>
-          <p>La excelencia es nuestro estándar en productos y servicios.</p>
-        </div>
-        <div class="col-md-4 valor-item mb-4" data-aos="flip-right" data-aos-delay="100">
-          <i class="fas fa-users"></i>
-          <h5 class="mt-3">Colaboración</h5>
-          <p>Trabajamos en equipo para lograr los mejores resultados.</p>
-        </div>
-        <div class="col-md-4 valor-item mb-4" data-aos="flip-right" data-aos-delay="200">
-          <i class="fas fa-globe"></i>
-          <h5 class="mt-3">Responsabilidad</h5>
-          <p>Nuestras soluciones son sostenibles, eficientes y con impacto positivo.</p>
-        </div>
+<!-- Sección Valores -->
+<section id="valores" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center" data-aos="fade-up">Nuestros Valores</h2>
+    <div class="row text-center">
+      <div class="col-md-4 valor-item mb-4" data-aos="flip-left">
+        <i class="fas fa-lightbulb"></i>
+        <h5 class="mt-3">Innovación</h5>
+        <p>Buscamos soluciones creativas y vanguardistas para cada desafío.</p>
+      </div>
+      <div class="col-md-4 valor-item mb-4" data-aos="flip-left" data-aos-delay="100">
+        <i class="fas fa-handshake"></i>
+        <h5 class="mt-3">Compromiso</h5>
+        <p>Cumplimos con los plazos y superamos expectativas en cada proyecto.</p>
+      </div>
+      <div class="col-md-4 valor-item mb-4" data-aos="flip-left" data-aos-delay="200">
+        <i class="fas fa-check-circle"></i>
+        <h5 class="mt-3">Confianza</h5>
+        <p>Construimos relaciones basadas en transparencia, honestidad y respeto.</p>
+      </div>
+      <div class="col-md-4 valor-item mb-4" data-aos="flip-right">
+        <i class="fas fa-award"></i>
+        <h5 class="mt-3">Calidad</h5>
+        <p>La excelencia es nuestro estándar en productos y servicios.</p>
+      </div>
+      <div class="col-md-4 valor-item mb-4" data-aos="flip-right" data-aos-delay="100">
+        <i class="fas fa-users"></i>
+        <h5 class="mt-3">Colaboración</h5>
+        <p>Trabajamos en equipo para lograr los mejores resultados.</p>
+      </div>
+      <div class="col-md-4 valor-item mb-4" data-aos="flip-right" data-aos-delay="200">
+        <i class="fas fa-globe"></i>
+        <h5 class="mt-3">Responsabilidad</h5>
+        <p>Nuestras soluciones son sostenibles, eficientes y con impacto positivo.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Sección Servicios -->
-  <section id="servicios" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title text-center" data-aos="fade-up">Nuestros Servicios</h2>
-      <div class="row">
-        <!-- Desarrollo de aplicaciones web -->
-        <div class="col-md-6 mb-4" data-aos="zoom-in">
-          <div class="card h-100">
-            <img src="img/desarrollo_web.png" class="card-img-top" alt="Desarrollo Web">
-            <div class="card-body">
-              <h5 class="card-title">Desarrollo de Aplicaciones Web</h5>
-              <p class="card-text">Creamos soluciones web responsivas, dinámicas y seguras que potencian tu presencia digital.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Desarrollo de aplicaciones móviles -->
-        <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-          <div class="card h-100">
-            <img src="img/desarrollo_mobil.jpeg" class="card-img-top" alt="Aplicaciones Móviles">
-            <div class="card-body">
-              <h5 class="card-title">Desarrollo de Aplicaciones Móviles</h5>
-              <p class="card-text">Diseñamos apps intuitivas para iOS y Android que se adaptan a las necesidades de tu negocio.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Diseño de sistemas -->
-        <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="card h-100">
-            <img src="img/sistemas.jpeg" class="card-img-top" alt="Diseño de Sistemas">
-            <div class="card-body">
-              <h5 class="card-title">Diseño de Sistemas</h5>
-              <p class="card-text">Desarrollamos la arquitectura tecnológica ideal para optimizar y escalar tus procesos.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Cableado estructurado -->
-        <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
-          <div class="card h-100">
-            <img src="img/cableado.png" class="card-img-top" alt="Cableado Estructurado">
-            <div class="card-body">
-              <h5 class="card-title">Cableado Estructurado</h5>
-              <p class="card-text">Implementamos redes de alta eficiencia y seguridad para garantizar una conectividad óptima.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Aplicaciones basadas en IA -->
-        <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
-          <div class="card h-100">
-            <img src="img/apps_ia.jpeg" class="card-img-top" alt="Inteligencia Artificial">
-            <div class="card-body">
-              <h5 class="card-title">Aplicaciones con Inteligencia Artificial</h5>
-              <p class="card-text">Integramos modelos pre entrenados para optimizar procesos y ofrecer soluciones inteligentes.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Resolución de errores y actualización de sistemas -->
-        <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
-          <div class="card h-100">
-            <img src="img/soporte.jpeg" class="card-img-top" alt="Soporte Técnico">
-            <div class="card-body">
-              <h5 class="card-title">Soporte y Actualización Tecnológica</h5>
-              <p class="card-text">Solucionamos errores y actualizamos tus sistemas para mantener la tecnología al día.</p>
-            </div>
+ <!-- Sección Servicios -->
+ <section id="servicios" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center" data-aos="fade-up">Nuestros Servicios</h2>
+    <div class="row">
+      <!-- Desarrollo de aplicaciones web -->
+      <div class="col-md-6 mb-4" data-aos="zoom-in">
+        <div class="card h-100">
+          <img src="img/desarrollo_web.png" class="card-img-top" alt="Desarrollo Web">
+          <div class="card-body">
+            <h5 class="card-title">Desarrollo de Aplicaciones Web</h5>
+            <p class="card-text">Creamos soluciones web responsivas, dinámicas y seguras que potencian tu presencia digital.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Sección Clientes: Casos de Éxito -->
-  <section id="exitos" class="py-5">
-    <div class="container">
-      <h2 class="section-title text-center" data-aos="fade-up">Casos de Éxito</h2>
-      <div class="row">
-        <!-- Caso 1: Proyecto Web Corporativo -->
-        <div class="col-md-4 mb-4" data-aos="flip-up">
-          <div class="card testimonial h-100 text-center p-3">
-            <img src="img/bota.png" alt="Proyecto Web">
-            <h5 class="mt-3">Proyecto Web Para Control de Inventario</h5>
-            <p class="fst-italic">"Desarrollamos un sitio web que permitió el mejor manejo de entradas y salidas de material para el área de mantenimiento en la empresa Botanicals Internacional."</p>
+      <!-- Desarrollo de aplicaciones móviles -->
+      <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100">
+          <img src="img/desarrollo_mobil.jpeg" class="card-img-top" alt="Aplicaciones Móviles">
+          <div class="card-body">
+            <h5 class="card-title">Desarrollo de Aplicaciones Móviles</h5>
+            <p class="card-text">Diseñamos apps intuitivas para iOS y Android que se adaptan a las necesidades de tu negocio.</p>
           </div>
         </div>
-        <!-- Caso 2: App Móvil de Gestión -->
-        <div class="col-md-4 mb-4" data-aos="flip-up" data-aos-delay="100">
-          <div class="card testimonial h-100 text-center p-3">
-            <img src="img/react.png" alt="App Móvil">
-            <h5 class="mt-3">App Móvil de Gestión</h5>
-            <p class="fst-italic">"Implementamos una aplicación movil en react para adaptar un sitio web a aplicación, para una mejor accesibilidad y control del sistema."</p>
+      </div>
+      <!-- Diseño de sistemas -->
+      <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100">
+          <img src="img/sistemas.jpeg" class="card-img-top" alt="Diseño de Sistemas">
+          <div class="card-body">
+            <h5 class="card-title">Diseño de Sistemas</h5>
+            <p class="card-text">Desarrollamos la arquitectura tecnológica ideal para optimizar y escalar tus procesos.</p>
           </div>
         </div>
-        <!-- Caso 3: Solución de IA para Automatización -->
-        <div class="col-md-4 mb-4" data-aos="flip-up" data-aos-delay="200">
-          <div class="card testimonial h-100 text-center p-3">
-            <img src="img/logo_safework.jpg" alt="Solución de IA">
-            <h5 class="mt-3">Automatización con IA</h5>
-            <p class="fst-italic">"Implementamos un sistema de detección de equipo de seguridad para el área de planta de una empresa, optimizando procesos internos y reduciendo costos operativos."</p>
+      </div>
+      <!-- Cableado estructurado -->
+      <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card h-100">
+          <img src="img/cableado.png" class="card-img-top" alt="Cableado Estructurado">
+          <div class="card-body">
+            <h5 class="card-title">Cableado Estructurado</h5>
+            <p class="card-text">Implementamos redes de alta eficiencia y seguridad para garantizar una conectividad óptima.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Aplicaciones basadas en IA -->
+      <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="card h-100">
+          <img src="img/apps_ia.jpeg" class="card-img-top" alt="Inteligencia Artificial">
+          <div class="card-body">
+            <h5 class="card-title">Aplicaciones con Inteligencia Artificial</h5>
+            <p class="card-text">Integramos modelos pre entrenados para optimizar procesos y ofrecer soluciones inteligentes.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Resolución de errores y actualización de sistemas -->
+      <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
+        <div class="card h-100">
+          <img src="img/soporte.jpeg" class="card-img-top" alt="Soporte Técnico">
+          <div class="card-body">
+            <h5 class="card-title">Soporte y Actualización Tecnológica</h5>
+            <p class="card-text">Solucionamos errores y actualizamos tus sistemas para mantener la tecnología al día.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Sección Clientes: Opiniones de Clientes -->
+<!-- Sección Clientes: Casos de Éxito -->
+<section id="exitos" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center" data-aos="fade-up">Casos de Éxito</h2>
+    <div class="row">
+      <!-- Caso 1: Proyecto Web Corporativo -->
+      <div class="col-md-4 mb-4" data-aos="flip-up">
+        <div class="card testimonial h-100 text-center p-3">
+          <img src="img/bota.png" alt="Proyecto Web">
+          <h5 class="mt-3">Proyecto Web Para Control de Inventario</h5>
+          <p class="fst-italic">"Desarrollamos un sitio web que permitió el mejor manejo de entradas y salidas de material para el área de mantenimiento en la empresa Botanicals Internacional."</p>
+        </div>
+      </div>
+      <!-- Caso 2: App Móvil de Gestión -->
+      <div class="col-md-4 mb-4" data-aos="flip-up" data-aos-delay="100">
+        <div class="card testimonial h-100 text-center p-3">
+          <img src="img/react.png" alt="App Móvil">
+          <h5 class="mt-3">App Móvil de Gestión</h5>
+          <p class="fst-italic">"Implementamos una aplicación movil en react para adaptar un sitio web a aplicación, para una mejor accesibilidad y control del sistema."</p>
+        </div>
+      </div>
+      <!-- Caso 3: Solución de IA para Automatización -->
+      <div class="col-md-4 mb-4" data-aos="flip-up" data-aos-delay="200">
+        <div class="card testimonial h-100 text-center p-3">
+          <img src="img/logo_safework.jpg" alt="Solución de IA">
+          <h5 class="mt-3">Automatización con IA</h5>
+          <p class="fst-italic">"Implementamos un sistema de detección de equipo de seguridad para el área de planta de una empresa, optimizando procesos internos y reduciendo costos operativos."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Opiniones de Clientes -->
   <section id="opiniones" class="py-5 bg-light">
     <div class="container">
       <h2 class="section-title text-center" data-aos="fade-up">Opiniones de Clientes</h2>
-      <!-- Contenedor de reseñas previas y nuevas -->
-      <div id="opinionesContainer" class="row">
-        <!-- Opinión Ejemplo 1 -->
-        <div class="col-md-6 mb-4" data-aos="fade-right">
-          <div class="testimonial">
-            <div class="d-flex align-items-center">
-              <img src="img/opinion1.jpeg" alt="Opinión 1">
-              <div class="ms-3">
-                <h6>Juan Pérez</h6>
-                <small>CEO - Empresa X</small>
-              </div>
-            </div>
-            <p class="mt-3">"El equipo de InnovaTech superó nuestras expectativas en cada etapa del proyecto."</p>
-          </div>
-        </div>
-        <!-- Opinión Ejemplo 2 -->
-        <div class="col-md-6 mb-4" data-aos="fade-left">
-          <div class="testimonial">
-            <div class="d-flex align-items-center">
-              <img src="img/opinion2.jpeg" alt="Opinión 2">
-              <div class="ms-3">
-                <h6>María López</h6>
-                <small>Directora de Innovación - Empresa Y</small>
-              </div>
-            </div>
-            <p class="mt-3">"Su soporte continuo ha sido clave para nuestro crecimiento digital."</p>
-          </div>
-        </div>
+      <div id="opinionesContainer" class="row"></div>
+      <div class="text-center mt-4">
+        <button id="loadMoreBtn" class="btn btn-secondary">Ver más</button>
       </div>
     </div>
   </section>
 
-  <!-- Sección Deja tu reseña -->
+  <!-- Deja tu reseña -->
   <section id="reseña" class="py-5">
     <div class="container" data-aos="fade-up">
       <h2 class="section-title text-center">Deja tu reseña</h2>
-      <p class="lead text-center mb-4">Comparte tu experiencia y ayuda a otros a conocer nuestros servicios</p>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <!-- En este ejemplo se usará JavaScript para capturar y enviar la reseña a procesa_resena.php -->
-          <form id="reseñaForm">
-            <div class="mb-3">
-              <label for="nombreReseña" class="form-label">Nombre Completo</label>
-              <input type="text" class="form-control" id="nombreReseña" placeholder="Tu nombre" required>
-            </div>
-            <div class="mb-3">
-              <label for="emailReseña" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="emailReseña" placeholder="correo@ejemplo.com" required>
-            </div>
-            <div class="mb-3">
-              <label for="reseñaInput" class="form-label">Reseña</label>
-              <input type="text" class="form-control" id="reseñaInput" placeholder="Breve resumen (ej. Excelente servicio)" required>
-            </div>
-            <div class="mb-3">
-              <label for="comentarioReseña" class="form-label">Comentario</label>
-              <textarea class="form-control" id="comentarioReseña" rows="3" placeholder="Cuéntanos más de tu experiencia" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Enviar Reseña</button>
-          </form>
-        </div>
-      </div>
+      <form id="reseñaForm" class="mx-auto" style="max-width:600px;">
+        <div class="mb-3"><input type="text" id="nombreReseña" class="form-control" placeholder="Nombre completo" required></div>
+        <div class="mb-3"><input type="email" id="emailReseña" class="form-control" placeholder="Correo electrónico" required></div>
+        <div class="mb-3"><input type="text" id="reseñaInput" class="form-control" placeholder="Reseña breve" required></div>
+        <div class="mb-3"><textarea id="comentarioReseña" class="form-control" rows="3" placeholder="Comentario" required></textarea></div>
+        <button class="btn btn-primary w-100">Enviar Reseña</button>
+      </form>
     </div>
   </section>
 
-  <!-- Sección de Contacto -->
+  <!-- Contacto -->
   <section id="contacto" class="py-5">
     <div class="container" data-aos="fade-up">
       <h2 class="section-title text-center">Contáctanos</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <!-- En este ejemplo se usará JavaScript para enviar el mensaje a procesa_contacto.php -->
-          <form id="contactForm">
-            <div class="mb-3">
-              <label for="nombreContacto" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombreContacto" placeholder="Tu nombre" required>
-            </div>
-            <div class="mb-3">
-              <label for="correoContacto" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="correoContacto" placeholder="correo@ejemplo.com" required>
-            </div>
-            <div class="mb-3">
-              <label for="mensajeContacto" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="mensajeContacto" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
-          </form>
-          <div id="respuestaContacto" class="alert alert-success mt-3 d-none">¡Gracias por contactarnos! Pronto nos comunicaremos contigo.</div>
-        </div>
-      </div>
+      <form id="contactForm" class="mx-auto" style="max-width:600px;">
+        <div class="mb-3"><input type="text" id="nombreContacto" class="form-control" placeholder="Nombre" required></div>
+        <div class="mb-3"><input type="email" id="correoContacto" class="form-control" placeholder="Correo" required></div>
+        <div class="mb-3"><textarea id="mensajeContacto" class="form-control" rows="5" placeholder="Mensaje" required></textarea></div>
+        <button class="btn btn-primary w-100">Enviar Mensaje</button>
+      </form>
+      <div id="respuestaContacto" class="alert alert-success mt-3 d-none">¡Gracias por contactarnos!</div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-dark text-light py-4" data-aos="fade-in">
     <div class="container text-center">
-      <p>&copy; 2025 InnovaTech Solutions. Todos los derechos reservados.</p>
+      <p>&copy; 2025 InnovaTech Solutions</p>
       <p>
-        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/share/157LZdWZtu/?mibextid=wwXIfr" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="mailto:solutions.innovatech.empresa@gmail.com" class="text-light me-3"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/5528969484" class="text-light"><i class="fab fa-whatsapp"></i></a>
       </p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS y dependencias -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- AOS JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
+    AOS.init({ duration:1000, once:true });
 
-    /* Envío del formulario de reseña a través de fetch a procesa_resena.php */
-    document.getElementById('reseñaForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData();
-      formData.append('nombre', document.getElementById('nombreReseña').value);
-      formData.append('email', document.getElementById('emailReseña').value);
-      formData.append('resumen', document.getElementById('reseñaInput').value);
-      formData.append('comentario', document.getElementById('comentarioReseña').value);
+    // Base URL de tu proyecto Supabase
+    const supabaseBase = 'https://pnadqbspunigtmcpqsps.supabase.co';
+    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBuYWRxYnNwdW5pZ3RtY3Bxc3BzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQxMjQ5NzUsImV4cCI6MjA1OTcwMDk3NX0.rG9l-0MI3lLOnLQ1aev0ammANcS-jBpra4bI_AOMwpo';
+    const reviewsEndpoint = `${supabaseBase}/rest/v1/reviews`;
 
-      fetch('procesa_resena.php', {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => response.json())
-      .then(data => {
-        if(data.mensaje) {
-          alert(data.mensaje);
-          const reviewCol = document.createElement('div');
-          reviewCol.className = 'col-md-6 mb-4 new-review';
-          reviewCol.innerHTML = `
-            <div class="testimonial">
-              <div class="d-flex align-items-center">
-                <img src="https://via.placeholder.com/80?text=${document.getElementById('nombreReseña').value.charAt(0)}" alt="Reseña">
-                <div class="ms-3">
-                  <h6>${document.getElementById('nombreReseña').value}</h6>
-                  <small>${document.getElementById('emailReseña').value}</small>
-                </div>
-              </div>
-              <p class="mt-3"><strong>${document.getElementById('reseñaInput').value}:</strong> ${document.getElementById('comentarioReseña').value}</p>
-            </div>
-          `;
-          document.getElementById('opinionesContainer').appendChild(reviewCol);
-          document.getElementById('reseñaForm').reset();
-        }
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert('Ha ocurrido un error. Intenta nuevamente.');
-      });
-    });
+    let allReviews = [];
+    let showingAll = false;
 
-    /* Envío del formulario de contacto a través de fetch a procesa_contacto.php */
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData();
-      formData.append('nombre', document.getElementById('nombreContacto').value);
-      formData.append('email', document.getElementById('correoContacto').value);
-      formData.append('mensaje', document.getElementById('mensajeContacto').value);
-
-      fetch('procesa_contacto.php', {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => response.text())
-      .then(text => {
-        console.log("Respuesta completa:", text); // Observa en la consola el texto recibido
-        try {
-          const data = JSON.parse(text);
-          if(data.mensaje) {
-            document.getElementById('respuestaContacto').classList.remove('d-none');
-            document.getElementById('contactForm').reset();
+    async function fetchReviews() {
+      try {
+        const res = await fetch(`${reviewsEndpoint}?select=*&order=fecha.desc`, {
+          headers: {
+            'apikey': supabaseKey,
+            'Authorization': 'Bearer ' + supabaseKey,
+            'Accept': 'application/json'
           }
-        } catch (e) {
-          console.error("Error parseando JSON:", e, text);
-          alert('Ha ocurrido un error al procesar la respuesta. Revisa la consola para más detalles.');
-        }
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert('Ha ocurrido un error al enviar el mensaje.');
+        });
+        allReviews = await res.json();
+        renderReviews();
+      } catch (err) {
+        console.error("Error al obtener reseñas:", err);
+      }
+    }
+
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function renderReviews() {
+      const container = document.getElementById('opinionesContainer');
+      container.innerHTML = '';
+      let list = [...allReviews];
+      if (!showingAll) {
+        shuffle(list);
+        list = list.slice(0, 4);
+      }
+      list.forEach(r => {
+        const col = document.createElement('div');
+        col.className = 'col-md-6 mb-4 new-review';
+        col.innerHTML = `
+          <div class="testimonial" data-aos="fade-up">
+            <div class="d-flex align-items-center">
+              <img src="https://via.placeholder.com/80?text=${r.nombre.charAt(0)}" alt="${r.nombre}">
+              <div class="ms-3"><h6>${r.nombre}</h6><small>${r.email}</small></div>
+            </div>
+            <p class="mt-3"><strong>${r.resumen}:</strong> ${r.comentario}</p>
+          </div>
+        `;
+        container.appendChild(col);
       });
+      document.getElementById('loadMoreBtn').style.display =
+        showingAll || allReviews.length <= 4 ? 'none' : 'inline-block';
+    }
+
+    document.getElementById('loadMoreBtn').addEventListener('click', () => {
+      showingAll = true;
+      renderReviews();
+    });
+
+    // Carga inicial
+    fetchReviews();
+
+    // Envío formulario contacto
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      fetch('procesa_contacto.php', { method:'POST', body:formData })
+        .then(r => r.json()).then(data => {
+          if (data.mensaje) {
+            document.getElementById('respuestaContacto').classList.remove('d-none');
+            e.target.reset();
+          }
+        });
+    });
+
+    // Envío formulario reseña
+    document.getElementById('reseñaForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      fetch('procesa_resena.php', { method:'POST', body:formData })
+        .then(r => r.json()).then(data => {
+          if (data.mensaje) {
+            showingAll = false;
+            fetchReviews();
+            e.target.reset();
+            alert(data.mensaje);
+          }
+        });
     });
   </script>
 </body>
